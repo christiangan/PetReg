@@ -284,14 +284,16 @@
                         android:layout_below="@id/radioGroupGender"
                         android:textStyle="bold"
                         android:textSize="16sp"
-                        android:id="@+id/textView6" />
+                        android:id="@+id/textView6"
+                        android:visibility="gone"/>
 
                     <RadioGroup
                         android:id="@+id/radioGroupIfFemale"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/textView6"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        android:visibility="gone">
 
                         <RadioButton
                             android:layout_width="wrap_content"
@@ -311,7 +313,8 @@
                         android:id="@+id/editLabel5"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_below="@id/radioGroupIfFemale">
+                        android:layout_below="@id/radioGroupIfFemale"
+                        android:visibility="gone">
                         <EditText
                             android:id="@+id/editNoOfPuppies"
                             android:layout_width="match_parent"

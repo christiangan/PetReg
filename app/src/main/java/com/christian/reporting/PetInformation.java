@@ -27,6 +27,7 @@ public class PetInformation extends AppCompatActivity {
         setContentView(R.layout.activity_pet_information);
 
 
+
         btnChangeDate = (Button) findViewById(R.id.btnChangeDate);
         editBirthMonth = (EditText) findViewById(R.id.textMM);
         editBirthDate = (EditText) findViewById(R.id.textDD);

@@ -4,7 +4,7 @@ package com.christian.reporting;
  * Created by Christian on 2/23/2018.
  */
 
-public class DatabaseModel {
+public class Client {
 //    private String name;
 //    private String roll;
 //    private String address;
@@ -17,10 +17,8 @@ public class DatabaseModel {
     private String dateRegistered;
     private String sexDesc;
     private String bday;
+    private String clientId;
 
-    public String getEmail() {
-        return email;
-    }
 
     public void setEmail(String email) {
         this.email = email;
@@ -54,6 +52,10 @@ public class DatabaseModel {
         this.bday = bday;
     }
 
+    public void setClientId(String clientId) {
+        this.clientId = clientId;
+    }
+
     public String getLastName() {
         return lastName;
     }
@@ -80,6 +82,14 @@ public class DatabaseModel {
 
     public String getBday() {
         return bday;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getClientId() {
+        return clientId;
     }
 
 }

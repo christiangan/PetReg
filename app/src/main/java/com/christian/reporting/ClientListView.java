@@ -5,7 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -19,7 +18,7 @@ public class ClientListView extends AppCompatActivity {
 //        super.onCreate(savedInstanceState);
 //        setContentView(R.layout.activity_client_list_view);
 //    }
-    List<DatabaseModel> dbList;
+    List<Client> dbList;
     RecyclerView mRecyclerView;
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
@@ -34,7 +33,7 @@ public class ClientListView extends AppCompatActivity {
 
         ClientDatabaseAccess clientDatabaseAccess = ClientDatabaseAccess.getInstance(this);
         clientDatabaseAccess.open();
-        dbList= new ArrayList<DatabaseModel>();
+        dbList= new ArrayList<Client>();
         dbList = clientDatabaseAccess.getClientListView();
 
 

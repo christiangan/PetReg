@@ -74,13 +74,13 @@ public class ClientDatabaseAccess {
         return list;
     }
 
-    public List<DatabaseModel> getClientListView() {
-        List<DatabaseModel> modelList = new ArrayList<DatabaseModel>();
+    public List<Client> getClientListView() {
+        List<Client> modelList = new ArrayList<Client>();
         Cursor cursor = database.rawQuery("SELECT lastName, firstName, middleName, emailAddress, contactNumber, dateRegistered, sexDesc, birthday, rcodenum, pcodenum, mcodenum, bcodenum FROM clients", null);
 
         cursor.moveToFirst();
         do {
-            DatabaseModel model = new DatabaseModel();
+            Client model = new Client();
             model.setLastName(cursor.getString(0));
             model.setFirstName(cursor.getString(1));
             model.setMiddleName(cursor.getString(2));
@@ -139,6 +139,9 @@ public class ClientDatabaseAccess {
 
         database.insert("petRegistration", null, contentValues);
     }
+
+
+
 
 
 
